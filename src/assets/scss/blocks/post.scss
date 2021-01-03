@@ -9,10 +9,10 @@
 }
 
 .post__header {
-	margin: -2.5rem -2.5rem 2rem;
+	margin: 0 0 2rem;
 
-	&--video {
-		margin: 0 0 2rem;
+	&--preview {
+		margin: -2.5rem -2.5rem 2rem;
 	}
 }
 .post__preview {
@@ -32,19 +32,85 @@
 	font-size: 1.8rem;
 	font-weight: 500;
 
-	a {
-		text-decoration: none;
-		color: inherit;
-
-		&:hover {
-			text-decoration: underline;
-		}
+	&--mb0 {
+		margin-bottom: 0;
 	}
+
+	a {
+		color: inherit;
+	}
+}
+
+.post__subtitle {
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+
+	font-size: 1.6rem;
+	color: $white;
+	font-weight: 500;
+	line-height: 1.3;
+}
+
+.post__description {
+	width: 100%;
+	color: #D2D2D2;
 }
 
 .post__text {
 	width: 100%;
-	color: #D2D2D2;
+	padding-bottom: 1rem;
+
+	border-bottom: 1px solid #1C1C1C;
+
+	// Styles for content added from CMS
+	h2, h3, h4, h5, h6 {
+		font-weight: 700;
+		margin-bottom: 2rem;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	h3 {
+		font-size: 1.25em;
+	}
+
+	h4 {
+		font-size: 1.15em;
+	}
+
+	h5, h6 {
+		font-size: 1em;
+	}
+
+	p {
+		margin-bottom: 2rem;
+	}
+
+	 a {
+	 	color: $blue;
+	 }
+
+	img {
+		display: block;
+		min-width: 100%;
+		height: auto;
+	}
+
+	ul, ol {
+		margin-bottom: 2rem;
+	}
+
+	ol {
+		list-style: decimal;
+		list-style-position: inside;
+	}
+
+	table {
+		width: 100%;
+		margin-bottom: 2rem;
+	}
 }
 
 .post__footer {
@@ -59,12 +125,7 @@
 	line-height: 1.2;
 
 	a {
-		text-decoration: none;
 		color: inherit;
-
-		&:hover {
-			text-decoration: underline;
-		}
 	}
 }
 
@@ -88,9 +149,28 @@
 .post__read {
 	font-size: 1.4rem;
 	color: #107EFF;
-	text-decoration: none;
+}
 
-	&:hover {
-		text-decoration: underline;
+.post__actions {
+	margin-bottom: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+
+	font-size: 1.2rem;
+	color: $white;
+
+	a {
+		color: inherit;
+		opacity: .6;
+
+		transition: opacity .2s linear;
+
+		&:hover {
+			opacity: 1;
+		}
 	}
+}
+
+.post__actions-icon {
+	margin-left: .5rem;
 }

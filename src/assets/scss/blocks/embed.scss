@@ -1,6 +1,8 @@
 // Video adaptation to the parent container, 16:8
 
-.embed {
+.embed,
+.fr-video {
+	display: block;
 	position: relative;
 	overflow: hidden;
 
